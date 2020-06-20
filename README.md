@@ -13,30 +13,27 @@ Lianjia URL: https://bj.lianjia.com/chengjiao
 | Column Name | Description |
 ------------- | -------------
 | url | the url which fetches the data |
-
-id	the id of transaction
-Lng and Lat 	coordinates, using the BD09 protocol.
-Cid	community id
-tradeTime	the time of transaction
-DOM	active days on market
-followers	the number of people follow the transaction.
-totalPrice	the total price
-price	the average price by square
-square	the square of house
-livingRoom	the number of living room
-drawingRoom	the number of drawing room
-kitchen	the number of kitchen
-bathroom	the number of bathroom
-floor	the height of the house.
-buildingType	including tower (1), bungalow (2), combination of plate and tower (3), plate (4)
-constructionTime	the time of construction
-renovationCondition	including others (1), rough (2), Simplicity (3), hardcover (4)
-buildingStructure	including unknown (1), mixed (2), brick and wood (3), brick and concrete (4), steel (5) and steel-concrete composite (6).
-ladderRatio	the proportion between number of residents on the same floor and number of elevators of ladder. It describes how many ladders a resident has on average.
-elevator	 Available (1) 
-or elevator not available(0)
-fiveYearsProperty	owner has the property for less than 5 years (0)
-or has the property for more than 5 years (1)
+| id | the id of transaction |
+| Lng and Lat | coordinates, using the BD09 protocol |
+| Cid | community id |
+| tradeTime | the time of transaction |
+| DOM | active days on market |
+| followers | the number of people follow the transaction |
+| totalPrice | the total price |
+| price | the average price by square |
+| square | the square of house |
+| livingRoom | the number of living room |
+| drawingRoom | the number of drawing room |
+| kitchen | the number of kitchen |
+| bathroom | the number of bathroom |
+| floor | the height of the house |
+| buildingType | including tower (1), bungalow (2), combination of plate and tower (3), plate (4) |
+| constructionTime | the time of construction |
+| renovationCondition | including others (1), rough (2), Simplicity (3), hardcover (4) |
+| buildingStructure | including unknown (1), mixed (2), brick and wood (3), brick and concrete (4), steel (5) and steel-concrete composite (6) |
+| ladderRatio | the proportion between number of residents on the same floor and number of elevators of ladder. It describes how many ladders a resident has on average. |
+| elevator | Available (1) or elevator not available(0) |
+| fiveYearsProperty | owner has the property for less than 5 years (0) or has the property for more than 5 years (1) |
 
 
 ## Data Cleaning & Pre-processing
