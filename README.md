@@ -39,7 +39,7 @@ This dataset has been taken from Kaggle.com. Data originally fetched from Lianji
 ## Data Cleaning & Pre-processing
 Most of the columns have invalid characters and irrelevant data which must be treated first before moving to Statistical Analysis. Initially, the unnecessary variables are dropped as it is not required to perform machine learning algorithms. Variable DOM has the greatest number of null values, that is 50% of the value is null which in turn is not required for the analysis. Hence, the DOM column is dropped. Variables such as Living Room, Drawing Room, Bathroom, Construction Time, Building Type, Building Structure have few invalid data which are corrected later. Floor type has been split into Floor type and Floor number. As a final step on Data cleaning, most of the columns which had the null values have been updated with their Mode values and few columns updated with their Average.
 
- 
+
 ## Descriptive Data Analysis
 Creating detailed numerical summary to do descriptive data analysis.
 
@@ -50,6 +50,7 @@ Creating detailed numerical summary to do descriptive data analysis.
 It has been observed from the boxplot that the totalPrice has the Outlier. Hence, those outliers are replaced with the Average.
 
 ![Screenshot](outlier.jpg) 
+
 
 ## Exploratory Data Analysis
 Creating Histograms and Correlation Matrices.
@@ -75,6 +76,7 @@ Machine-learning algorithms use statistics to find patterns in massive amounts o
 
 Note: Below Models are for Total Price Prediction
 
+
 ## Multi-Linear Regression Model:
 Multi Linear Regression Model an obtained accuracy of 80%.
 
@@ -82,12 +84,14 @@ Multi Linear Regression Model an obtained accuracy of 80%.
 
 ![Screenshot](mlr.jpg) 
 
+
 ## Random Forest Regression Model:
 Random Forest Regression Model  obtained the accuracy level of 91% which is significantly higher than the Multi linear regression model.
 
 * Accuracy:  0.9103582877555013
 
 ![Screenshot](rfr.jpg) 
+
 
 Rather than creating each model one by one, Pipeline method from scikit-learn can be used. Pipelines are set up with the fit/transform/predict functionality, so that it can fit the whole pipeline to the training data and transform the test data without having to do it individually every time.
 
