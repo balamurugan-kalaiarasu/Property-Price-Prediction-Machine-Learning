@@ -42,22 +42,25 @@ Most of the columns have invalid characters and irrelevant data which must be tr
  
 ## Descriptive Data Analysis
 Creating detailed numerical summary to do descriptive data analysis.
- 
+![Screenshot](descriptive.jpg)
+
 
 ## Outliers
 It has been observed from the boxplot that the totalPrice has the Outlier. Hence, those outliers are replaced with the Average.
- 
+![Screenshot](outlier.jpg) 
 
 ## Exploratory Data Analysis
 Creating Histograms and Correlation Matrices.
 
  
 ## Histograms:
- 
+![Screenshot](hist.jpg)
 
  
 ## Correlation Heat Map:
- 
+![Screenshot](cor.jpg)
+
+
 ## Feature Selection
 Feature Selection is one of the core concepts in machine learning which hugely impacts the performance of the model. The data features that are used to train the machine learning models have a huge influence on the performance which is achieved. From the Correlation matrices and heat map, below features are selected to be removed from the dataset.
 ['Lng', 'Lat', 'kitchen', 'buildingType', 'ladderRatio', 'fiveYearsProperty', 'price']
@@ -72,13 +75,13 @@ Note: Below Models are for Total Price Prediction
 Multi Linear Regression Model an obtained accuracy of 80%.
 
 Accuracy:  0.8081718234464055
- 
+![Screenshot](mlr.jpg) 
 
 ## Random Forest Regression Model:
 Random Forest Regression Model  obtained the accuracy level of 91% which is significantly higher than the Multi linear regression model.
 
 Accuracy:  0.9103582877555013
- 
+![Screenshot](rfr.jpg) 
 
 Rather than creating each model one by one, Pipeline method from scikit-learn can be used. Pipelines are set up with the fit/transform/predict functionality, so that it can fit the whole pipeline to the training data and transform the test data without having to do it individually every time.
 
@@ -98,10 +101,13 @@ Wall time: 8min 41s
 
 From the above, it is clear that the Random Forest Regression could be the best model for the dataset. However, XGBoost Model’s accuracy is almost same as Random Forest Regression. 
 
+
 ## XGBoost Model:
 Since the XGBoost Model also has the higher accuracy, fine tuning some of its parameters obtained the accuracy of 93% which is slightly increased from the Random Forest Regression Model.
 Accuracy:  0.9316550942094334
- 
+![Screenshot](xg.jpg)
+
+
 ## Conclusion
 XGBoost Model is the best one across all the regression models for this dataset. This model obtained 93% of accuracy for both of the Total Price and Square variable predictions. 
 
