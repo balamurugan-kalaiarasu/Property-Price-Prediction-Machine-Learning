@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">
+<h1 align="center">
 # Regression--Machine-Learning-Algorithm
 </h1>
 
