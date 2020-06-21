@@ -1,5 +1,5 @@
 <h1 align="center">
-# Regression--Machine-Learning-Algorithm
+Regression--Machine-Learning-Algorithm
 </h1>
 
 ## Background
