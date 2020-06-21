@@ -1,15 +1,15 @@
 # Regression--Machine-Learning-Algorithm
-
+ 
 ## Background
 The dataset contains the property information of Beijing, China for the period of 2011 to 2017. It includes URL, ID, Lng, Lat, CommunityID, TradeTime, DOM(days on market), Followers, Total price, Price, Square, Living Room, number of Drawing room, Kitchen and Bathroom, Building Type, Construction time, renovation condition, building structure, Ladder ratio(which is the proportion between number of residents on the same floor and number of elevator of ladder. It describes how many ladders a resident has on average), elevator, Property rights for five years（It's related to China's restricted purchase of houses policy), Subway, District, Community average price. Most of the data were traded in 2011-2017, some of them were traded in Jan 2018, and some even earlier(2010,2009).
-
+ 
 ## Data Source
 This dataset has been taken from Kaggle.com. Data originally fetched from Lianjia.com. 
 * Kaggle URL: https://www.kaggle.com/ruiqurm/lianjia
 * Lianjia URL: https://bj.lianjia.com/chengjiao
-
+ 
 ## About Dataset
-
+ 
 | Column Name | Description |
 ------------- | -------------
 | url | the url which fetches the data |
@@ -35,23 +35,23 @@ This dataset has been taken from Kaggle.com. Data originally fetched from Lianji
 | elevator | Available (1) or elevator not available(0) |
 | fiveYearsProperty | owner has the property for less than 5 years (0) or has the property for more than 5 years (1) |
 
-
+ 
 ## Data Cleaning & Pre-processing
 Most of the columns have invalid characters and irrelevant data which must be treated first before moving to Statistical Analysis. Initially, the unnecessary variables are dropped as it is not required to perform machine learning algorithms. Variable DOM has the greatest number of null values, that is 50% of the value is null which in turn is not required for the analysis. Hence, the DOM column is dropped. Variables such as Living Room, Drawing Room, Bathroom, Construction Time, Building Type, Building Structure have few invalid data which are corrected later. Floor type has been split into Floor type and Floor number. As a final step on Data cleaning, most of the columns which had the null values have been updated with their Mode values and few columns updated with their Average.
 
-
+ 
 ## Descriptive Data Analysis
 Creating detailed numerical summary to do descriptive data analysis.
 
 ![Screenshot](descriptive.jpg)
 
-
+ 
 ## Outliers
 It has been observed from the boxplot that the totalPrice has the Outlier. Hence, those outliers are replaced with the Average.
 
 ![Screenshot](outlier.jpg) 
 
-
+ 
 ## Exploratory Data Analysis
 Creating Histograms and Correlation Matrices.
 
@@ -64,8 +64,8 @@ Creating Histograms and Correlation Matrices.
 ## Correlation Heat Map:
 
 ![Screenshot](cor.jpg)
-
-
+ 
+ 
 ## Feature Selection
 Feature Selection is one of the core concepts in machine learning which hugely impacts the performance of the model. The data features that are used to train the machine learning models have a huge influence on the performance which is achieved. From the Correlation matrices and heat map, below features are selected to be removed from the dataset.
 ['Lng', 'Lat', 'kitchen', 'buildingType', 'ladderRatio', 'fiveYearsProperty', 'price']
@@ -76,7 +76,7 @@ Machine-learning algorithms use statistics to find patterns in massive amounts o
 
 Note: Below Models are for Total Price Prediction
 
-
+ 
 ## Multi-Linear Regression Model:
 Multi Linear Regression Model an obtained accuracy of 80%.
 
@@ -84,7 +84,7 @@ Multi Linear Regression Model an obtained accuracy of 80%.
 
 ![Screenshot](mlr.jpg) 
 
-
+ 
 ## Random Forest Regression Model:
 Random Forest Regression Model  obtained the accuracy level of 91% which is significantly higher than the Multi linear regression model.
 
@@ -92,9 +92,10 @@ Random Forest Regression Model  obtained the accuracy level of 91% which is sign
 
 ![Screenshot](rfr.jpg) 
 
-
+ 
 Rather than creating each model one by one, Pipeline method from scikit-learn can be used. Pipelines are set up with the fit/transform/predict functionality, so that it can fit the whole pipeline to the training data and transform the test data without having to do it individually every time.
 
+ 
 ## Model Selection:
 Using Pipeline method and creating Support Vector Regression, Decision Tree Regression, Random Forest Regression and XgBoost Models and evaluation.
 
@@ -111,7 +112,7 @@ Using Pipeline method and creating Support Vector Regression, Decision Tree Regr
 
 From the above, it is clear that the Random Forest Regression could be the best model for the dataset. However, XGBoost Model’s accuracy is almost same as Random Forest Regression. 
 
-
+ 
 ## XGBoost Model:
 Since the XGBoost Model also has the higher accuracy, fine tuning some of its parameters obtained the accuracy of 93% which is slightly increased from the Random Forest Regression Model.
 
@@ -119,11 +120,11 @@ Since the XGBoost Model also has the higher accuracy, fine tuning some of its pa
 
 ![Screenshot](xg.jpg)
 
-
+ 
 ## Conclusion
 XGBoost Model is the best one across all the regression models for this dataset. This model obtained 93% of accuracy for both of the Total Price and Square variable predictions. 
 
-
+ 
 ## References
 1.	https://www.udemy.com/course/machinelearning/
 2.	https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html
