@@ -50,13 +50,13 @@ Most of the columns have invalid characters and irrelevant data which must be tr
 ## Descriptive Data Analysis
 Creating detailed numerical summary to do descriptive data analysis.
 
-![Screenshot](descriptive.jpg)
+![Screenshot](readme-resources/descriptive.jpg)
 
  
 ## Outliers
 It has been observed from the boxplot that the totalPrice has the Outlier. Hence, those outliers are replaced with the Average.
 
-![Screenshot](outlier.jpg) 
+![Screenshot](readme-resources/outlier.jpg) 
 
  
 ## Exploratory Data Analysis
@@ -65,12 +65,12 @@ Creating Histograms and Correlation Matrices.
  
 ## Histograms:
 
-![Screenshot](hist.jpg)
+![Screenshot](readme-resources/hist.jpg)
 
  
 ## Correlation Heat Map:
 
-![Screenshot](cor.jpg)
+![Screenshot](readme-resources/cor.jpg)
  
  
 ## Feature Selection
@@ -89,7 +89,7 @@ Multi Linear Regression Model an obtained accuracy of 80%.
 
 * Accuracy:  0.8081718234464055
 
-![Screenshot](mlr.jpg) 
+![Screenshot](readme-resources/mlr.jpg) 
 
  
 ## Random Forest Regression Model:
@@ -97,7 +97,7 @@ Random Forest Regression Model  obtained the accuracy level of 91% which is sign
 
 * Accuracy:  0.9103582877555013
 
-![Screenshot](rfr.jpg) 
+![Screenshot](readme-resources/rfr.jpg) 
 
  
 Rather than creating each model one by one, Pipeline method from scikit-learn can be used. Pipelines are set up with the fit/transform/predict functionality, so that it can fit the whole pipeline to the training data and transform the test data without having to do it individually every time.
@@ -125,7 +125,7 @@ Since the XGBoost Model also has the higher accuracy, fine tuning some of its pa
 
 * Accuracy:  0.9316550942094334
 
-![Screenshot](xg.jpg)
+![Screenshot](readme-resources/xg.jpg)
 
  
 ## Conclusion
